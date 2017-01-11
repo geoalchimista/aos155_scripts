@@ -6,7 +6,7 @@ plt.style.use('ggplot')
 plt.rcParams.update({'mathtext.default': 'regular'})  # sans-serif math
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-met_data_fname = current_dir + ('/ucla_weather.csv')
+met_data_fname = current_dir + ('/ucla_weather.txt')
 
 df_met = pd.read_csv(
     met_data_fname, sep='\\s+|\\u2003', header=0,
