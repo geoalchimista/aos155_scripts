@@ -52,7 +52,7 @@ df_flux_subset = df_flux.loc[
     (df_flux['TIMESTAMP_START'] < plot_time_end), :]
 
 
-fig, axes = plt.subplots(6, 1, figsize=(12, 12), sharex=True)
+fig, axes = plt.subplots(6, 1, figsize=(12, 12))
 axes[0].plot(df_flux_subset['TIMESTAMP_START'], df_flux_subset['NEE_PI'],
              '.', label='net ecosystem exchange')
 axes[0].plot(df_flux_subset['TIMESTAMP_START'], df_flux_subset['RECO_PI'],
@@ -98,7 +98,7 @@ axes[5].plot(df_flux_subset['TIMESTAMP_START'], df_flux_subset['PPFD_IN'],
 #              '-', lw=0.5, label='diffuse incoming PPFD')
 
 for i in range(6):
-    axes[i].legend(loc='upper left', frameon=False, fontsize=10, ncol=4)
+    axes[i].legend(loc='best', frameon=True, fontsize=10, ncol=4)
 
 axes[0].set_ylabel('Carbon fluxes\n($\mu$mol m$^{-2}$ s$^{-1}$)')
 axes[1].set_ylabel('Heat fluxes\n(W m$^{-2}$)')
