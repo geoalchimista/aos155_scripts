@@ -1,5 +1,7 @@
 # AOS 155, Winter 2017
 
+Note: To download file from GitHub, right click on the file and select 'Save as ...' or 'Download'. 
+
 ## Download UCLA weather data and make plots
 
 1. Open an empty text file (Windows: Notepad; Mac: TextEdit; Linux: `vim` in the terminal).
@@ -17,3 +19,8 @@
 3. Run the Python script `plot_fluxdata.py` in the terminal. First type `python3` followed by a *space*, then drag the Python script file to the terminal window. Press `Enter/Return` to run it.
 4. Once it's done, see if you get a plot `fluxdata_br-sa1.png` for the time series of some major meteorological and flux variables, for example, net ecosystem exchange of carbon, air temperature, et cetera.
 5. The dataset is from 1 Jan 2002 to 31 Dec 2011, and the plotted period is the first half of the year 2010. If you'd like to plot a different period, open the Python script `plot_fluxdata.py` in a text editor and modify the variables `plot_time_start` and `plot_time_end`. Be sure to follow the same format (`yyyy-mm-dd{T}hh:mm`).
+
+## Download FLUXNET data and make plots (IPython Notebook version)
+
+Download the IPython Notebook file `plot_fluxdata.ipynb`, and open it in the IPython Notebook environment. To open it, first run `ipython notebook` (or `jupyter notebook`) from the terminal/command prompt, and the navigate to the file directory and open the `ipynb` file.
+
