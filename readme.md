@@ -1,6 +1,8 @@
 # AOS 155, Winter 2017
 
-Note: To download file from GitHub, right click on the file and select 'Save as ...' or 'Download'. 
+**Note**: To download a file from GitHub, right click on the file and select 'Save Link As...' or 'Download'. This works for all text files but not the IPython Notebook file. 
+
+For IPython Notebook file, navigate into the file, and on the righthand side find the "Raw" button, and right click on it and select 'Save Link As...' to download.
 
 ## Download UCLA weather data and make plots
 
